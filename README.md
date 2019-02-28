@@ -1,15 +1,14 @@
-### Date created
-Include the date you created this project and README file.
+### 02/28/2019
 
-### Project Title
-Replace the Project Title
+### Explore US Bikeshare Data
+This project is the python part of Udacity Programming for Data Science Non-Degree Program.
 
 ### Description
-Describe what your project is about and what it does
+This program is using Python to understand US bikeshare data. The user can filter by city name and time frame. Output is the most frequent time by travel, most popular stations and trip, trip duration and more user stats.
 
 ### Files used
-Include the files used
+
+CSV files chicago.csv, new_york_city.csv and washington.csv provided by Udacity, part of course material.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Following resources supported and helped me to complete the project, additonal to the Udacity Course Material, Student Hub and Knowledge Database.
