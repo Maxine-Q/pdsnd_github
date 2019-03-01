@@ -18,33 +18,33 @@ def get_filters():
 
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = ''
-    while city.lower() not in ['chicago', 'new york city', 'washington']:
+    city = city.lower()
+    while city not in ['chicago', 'new york city', 'washington']:
         if city == '':
             city = input('\nChoose the city you would like to explore. Please enter Chicago, New York City, or Washington.\n')
         else:
             print('\nSorry, there must be a typo.\n')
             city = input('\nPlease enter Chicago, New York City, or Washington.\n')
-    city = city.lower()
 
     # get user input for month (all, january, february, ... , june)
     month = ''
-    while month.lower() not in ['all', 'january', 'february', 'march', 'april', 'may', 'june']:
+    month = month.lower()
+    while month not in ['all', 'january', 'february', 'march', 'april', 'may', 'june']:
         if month == '':
             month = input('\nChoose the month you would like to explore. Please enter the month from January to June. If you would like to explore all, Please enter all.\n')
         else:
             print('\nSorry, there must be a typo.\n')
             month = input('\nPlease enter the month from January to June. If you would like to explore all, Please enter all.\n')
-    month = month.lower()
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     day = ''
-    while day.lower() not in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
+    day = day.lower()
+    while day not in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
         if day == '':
             day = input('\nChoose the day of week you would like to explore. Please enter the day from Monday to Sunday. If you would like to explore all, Please enter all.\n')
         else:
             print('\nSorry, there must be a typo.\n')
             day = input('\nPlease enter the day from Monday to Sunday. If you would like to explore all, Please enter all.\n')
-    day = day.lower()
 
     print('-'*40)
     return city, month, day
